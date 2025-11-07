@@ -6,4 +6,6 @@ urlpatterns = [
     path('biditem',views.biditem,name="biditem"),
     path('validate',views.validate,name="validate"),
     path('item/biditem',views.biditem,name="biditem"),
+   
+
 ]
