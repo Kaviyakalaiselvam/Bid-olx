@@ -1,16 +1,10 @@
-# OnlineBiddingSystemPython
+Bidding in OLX
 
+How to run:
 
-**you are supposed to write your email and app password in settings.py**<br/>
-
-**At line 131,132**
-
-
-```python
-
-EMAIL_HOST_USER = 'YOUR EMAIL'
-EMAIL_HOST_PASSWORD = "YOUR EMAIL'S APP-PASSWORD"
-
-```
-
-
+Create and activate a virtualenv with Python 3.11+.
+Install requirements: pip install -r requirements.txt
+Run migrations (required for auth/admin): python manage.py migrate
+Create a superuser (optional, to use admin): python manage.py createsuperuser
+Run server: python manage.py runserver
+Open http://127.0.0.1:8000/catalog/
